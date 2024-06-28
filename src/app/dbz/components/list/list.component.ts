@@ -9,7 +9,7 @@ import {v4 as uuid} from 'uuid';
 })
 export class ListComponent {
 
-  @Output() indexCharacter: EventEmitter<string> = new EventEmitter();
+  @Output() id: EventEmitter<string> = new EventEmitter();
 
   @Input()
   public characterList: Character[] = [{
@@ -20,7 +20,7 @@ export class ListComponent {
 
   onDeleteCharacter(id: string | undefined) {
     if (id !== undefined) {
-      this.indexCharacter.emit(id);
+      this.id.emit(id);
     } else {
       return;
     }
