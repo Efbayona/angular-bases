@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "delete": "npm uninstall angular-cli-ghpages",
-    "deploy": "ng add angular-cli-ghpages && ng deploy --base-href=https://Efbayona.github.io/angular-bases/"
+    "deploy2": "ng add angular-cli-ghpages && ng deploy --base-href=https://Efbayona.github.io/angular-bases/"
   },
   "private": true,
   "dependencies": {
