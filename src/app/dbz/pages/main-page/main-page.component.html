@@ -1,0 +1,15 @@
+<h1>Dbz Personajes</h1>
+<hr>
+
+<div class="row">
+
+  <div class="col" *ngIf="dbz.characters.length > 0 ; else notCharacters">
+    <app-list [characterList]="dbz.characters" (indexCharacter)="dbz.onDeleteCharacter($event)"></app-list>
+  </div>
+  <ng-template #notCharacters>No existen personajes</ng-template>
+
+  <div class="col">
+    <app-add-character (onNewCharacter)="dbz.onNewCharacter($event)"></app-add-character>
+  </div>
+
+</div>
