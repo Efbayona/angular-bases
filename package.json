@@ -7,8 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "delete": "npm uninstall angular-cli-ghpages",
-    "deploy2": "ng add angular-cli-ghpages && ng deploy --base-href=https://Efbayona.github.io/angular-bases/"
+    "push": "git add . && git commit -m \"despliegue\" && git push origin main",
+    "deploy-git": "ng deploy --base-href=https://Efbayona.github.io/angular-bases/"
   },
   "private": true,
   "dependencies": {
