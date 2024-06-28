@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'bases';
   public counter: number = 10;
 
 
